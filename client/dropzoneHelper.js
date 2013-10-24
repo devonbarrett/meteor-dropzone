@@ -1,6 +1,6 @@
 Handlebars.registerHelper('dropzone',function(url, options){
-  return new Handlebars.SafeString(Template.dropzone({action: url}))
+  return new Handlebars.SafeString(Template._dropzone({action: url}))
 });
-Template.dropzone.rendered = function(){
+Template._dropzone.rendered = function(){
   window.Dropzone.discover();
 }
