@@ -23,6 +23,7 @@ If you would like more control over your Dropzone. You can instantiate one on an
 
 ```
     $(selector).dropzone(options);
+    window.Dropzone.discover();
 ```
 
 A full list of options can be found in the Dropzone [documentation](http://www.dropzonejs.com/)
