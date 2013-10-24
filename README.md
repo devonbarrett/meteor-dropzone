@@ -1,5 +1,4 @@
-#Meteor-Dropzone [![Build Status](https://travis-ci.org/devonbarrett/meteor-dropzone.png?branch=master)](https://travis-ci.org/devonbarrett/meteor-dropzone)
-Meteor-Dropzone is a smart package for [MeteorJS](http://meteor.com). 
+#Meteor-Dropzone
 
 ##Dropzone.js
 [DropzoneJS](http://www.dropzonejs.com/) is an open source library that provides drag'n'drop file uploads with image previews.
