@@ -5,7 +5,7 @@ Package.describe({
 Package.on_use(function (api) {
   api.use('handlebars', 'client');
   api.add_files([
-  	'client/dropzoneHelper.js',
+    'client/dropzoneHelper.js',
     'lib/dropzone.js',
     'public/images/spritemap.png',
     'public/images/spritemap@2x.png',
