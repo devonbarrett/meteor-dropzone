@@ -14,7 +14,7 @@
 In your handlebar templates you can just include the template Dropzonejs:
 
 ```
-    {{{dropzone "/url/where/the/uploadedformdatashouldbesent"}}}
+    {{{dropzone "/url/where/the/uploadedformdatashouldbesent" "element id so you can access the Dropzone object"}}}
 ```
 Which will post any uploaded files to the url of your choice.
 
