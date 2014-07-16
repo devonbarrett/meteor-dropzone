@@ -3,6 +3,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
+  api.export('Dropzone');
   api.use(['templating', 'handlebars'], 'client');
   api.add_files([
     'client/dropzone.html',
