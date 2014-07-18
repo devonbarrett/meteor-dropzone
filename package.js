@@ -8,7 +8,7 @@ Package.on_use(function (api) {
   api.add_files([
     'client/dropzone.html',
     'client/dropzoneHelper.js',
-    'lib/dropzone.js',
+    'client/dropzone.js',
     'public/images/spritemap.png',
     'public/images/spritemap@2x.png',
     'public/css/basic.css',
