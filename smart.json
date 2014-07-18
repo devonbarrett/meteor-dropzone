@@ -3,7 +3,7 @@
   "description": "Dropzone.js - an open source library that provides drag'n'drop file uploads with image previews",
   "homepage": "https://github.com/devonbarrett/meteor-dropzone",
   "author": "Devon Barrett <devon@devonbarrett.net> (http://devonbarrett.net)",
-  "version": "1.0.1",
+  "version": "3.10.2-rev01",
   "git": "https://github.com/devonbarrett/meteor-dropzone.git",
   "packages": {}
 }
