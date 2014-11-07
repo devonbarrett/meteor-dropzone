@@ -26,9 +26,3 @@ Package.onUse(function(api) {
   	'dbarrett:dropzonejs.js'
   ], 'client');
 });
-
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('dbarrett:dropzonejs');
-  api.addFiles('dbarrett:dropzonejs-tests.js');
-});
