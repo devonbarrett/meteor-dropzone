@@ -4,13 +4,11 @@
 [DropzoneJS](http://www.dropzonejs.com/) is an open source library that provides drag'n'drop file uploads with image previews.
 
 ## Compatibility
-Intended for versions of Meteor 0.8.2+
+Intended for versions of Meteor 1.0
 
 ## Installation
-* Pre-Install: [Meteorite](https://github.com/oortcloud/meteorite) to gain the mrt command
-* Add Dropzonejs to your project with:
 ```
-    mrt add Dropzonejs
+    meteor add dbarrett:dropzonejs
 ```
 
 ## Usage
@@ -21,13 +19,24 @@ In your handlebar templates you can just include the template Dropzonejs:
 ```
 Which will post any uploaded files to the url of your choice.
 
+
+id is optional, if you do not set one, a random string will be used.
+*url is not optional* you must pass a url to the template.
+
 ### Options
-If you would like more control over your Dropzone. You can instantiate one on any html element and pass a range of events and options.
+If you would like more control over your Dropzone. You can pass the full range of options found in the Dropzone [documentation](http://www.dropzonejs.com/) to the template e.g.
 
 ```
-    $(selector).dropzone(options);
-    window.Dropzone.discover();
+    {{> dropzone url='http://somewebsite.com/upload' id='dropzoneDiv' maxFiles=4}}
 ```
+
+Or you can set the default options that every dropzone instance is instantiated with globally:
+
+```
+	Meteor.Dropzone.options.maxFiles = 4;
+```
+
+These will be overridden by any parameters set in the template helper.
 
 A full list of options can be found in the Dropzone [documentation](http://www.dropzonejs.com/)
 
@@ -37,4 +46,4 @@ A full list of options can be found in the Dropzone [documentation](http://www.d
 ## Todo
 Pull requests are very welcome if you are looking for a starting point:
 - Tests
-- Ability to pass options to the template
+- Examples
