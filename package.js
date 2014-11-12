@@ -13,16 +13,24 @@ Package.onUse(function(api) {
     'underscore'
   ], 'client');
 
+  //add dropzone library 
   api.addFiles([
-  	'3.10.2/dropzone.js',
-  	'3.10.2/images/spritemap.png',
-  	'3.10.2/images/spritemap@2x.png',
-  	'3.10.2/css/basic.css',
-  	'3.10.2/css/dropzone.css',
+  	'lib/3.10.2/dropzone.js',
+  	'lib/3.10.2/images/spritemap.png',
+  	'lib/3.10.2/images/spritemap@2x.png',
+  	'lib/3.10.2/css/basic.css',
+  	'lib/3.10.2/css/dropzone.css',
   ], 'client');
-  
+
+  //add dropzone template 
   api.addFiles([
-  	'dbarrett:dropzonejs.html', 
-  	'dbarrett:dropzonejs.js'
+  	'lib/dbarrett:dropzonejs.html', 
+  	'lib/dbarrett:dropzonejs.js'
   ], 'client');
+});
+
+Package.onTest(function(api) {
+  api.use('tinytest');
+  api.use('dbarrett:dropzonejs');
+  api.addFiles('dbarrett:dropzonejs-tests.js');
 });
