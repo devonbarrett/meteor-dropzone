@@ -45,5 +45,4 @@ A full list of options can be found in the Dropzone [documentation](http://www.d
 
 ## Todo
 Pull requests are very welcome if you are looking for a starting point:
-- Tests
 - Examples
