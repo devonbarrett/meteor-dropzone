@@ -50,6 +50,7 @@ First add the server to your packages.
 ```
 meteor add tomi:upload-server
 ```
+Thanks to [tomi](https://github.com/tomitrescak) for his wonderful package.
 
 Then use the following simple code in one of your server files:
 
@@ -59,10 +60,35 @@ UploadServer.init({
   uploadDir: '/var/www/upload/',
   checkCreateDirectories: true,
   uploadUrl: '/upload/',
+  // *** For renaming files on server
+  getFileName: function(file, formData) {
+  	return new Date().getTime() + '-' + Math.floor((Math.random() * 10000) + 1) + '-' + file.name; 
+  	// we get this value in the ajax response
+  }
 });
 ```
 
-Thanks to [tomi](https://github.com/tomitrescak) for his wonderful package.
+Files can be renamed on the server as mentioned above. They can be used in the client as follows:
+```
+Template.tDropzone.onRendered(function () {
+  var options = _.extend( {}, Meteor.Dropzone.options, this.data );
+  
+  // if your dropzone has an id, you can pinpoint it exactly and do various client side operations on it.
+  if ( this.data.id ) {
+    this.dropzone = new Dropzone( '#' + this.data.id + '.dropzone', options );
+
+    var self = this;
+
+    // this is how you get the response from the ajax call.
+    this.dropzone.on('success', function(file, response) {
+      var res = JSON.parse(response);
+      file.fileNameOnServer = res.files[0].name;
+    });
+  } else {
+    this.$('.dropzone').dropzone( options );
+  }
+});
+```
 
 ## Todo
 Pull requests are very welcome if you are looking for a starting point:
