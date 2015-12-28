@@ -1,9 +1,13 @@
 Package.describe( {
   name: 'dbarrett:dropzonejs',
   summary: 'Dropzone.js - an open source library that provides drag\'n\'drop file uploads with image previews',
-  version: '4.0.2',
+  version: '4.2.0',
   git: 'https://github.com/devonbarrett/meteor-dropzone.git'
 } );
+
+Npm.depends({
+  dropzone: '4.2.0'
+});
 
 Package.onUse( function ( api ) {
   api.versionsFrom( '1.0' );
@@ -13,14 +17,14 @@ Package.onUse( function ( api ) {
     'underscore'
   ], 'client' );
 
-  //add dropzone library 
+  //add dropzone library
   api.addFiles( [
-    'lib/4.0.1/dropzone.js',
-    'lib/4.0.1/css/basic.css',
-    'lib/4.0.1/css/dropzone.css',
+    '.npm/package/node_modules/dropzone/dist/dropzone.js',
+    '.npm/package/node_modules/dropzone/dist/basic.css',
+    '.npm/package/node_modules/dropzone/dist/dropzone.css'
   ], 'client' );
 
-  //add dropzone template 
+  //add dropzone template
   api.addFiles( [
     'lib/dbarrett:dropzonejs.html',
     'lib/dbarrett:dropzonejs.js'
