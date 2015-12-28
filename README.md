@@ -40,9 +40,6 @@ These will be overridden by any parameters set in the template helper.
 
 A full list of options can be found in the Dropzone [documentation](http://www.dropzonejs.com/)
 
-## Contributors
-- [aramk](https://github.com/aramk)
-
 ## Example for upload on server.
 Iron router is quite tricky for handling post data. Flow router is mostly for clietn side. Either you implement your own handler on a specific route or simply use: [metor-upload-server](https://github.com/tomitrescak/meteor-tomi-upload-server)
 
@@ -67,6 +64,9 @@ UploadServer.init({
 
 Thanks to [tomi](https://github.com/tomitrescak) for his wonderful package.
 
-## Todo
-Pull requests are very welcome if you are looking for a starting point:
-- Examples
+**Pull requests are very welcome**
+
+## Contributors
+- [aramk](https://github.com/aramk)
+- [Sudhanshu](https://github.com/s7dhansh)
+
