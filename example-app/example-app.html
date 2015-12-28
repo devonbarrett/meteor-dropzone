@@ -1,0 +1,19 @@
+<head>
+  <title>example-app</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  <section id="from-template">
+    <h2>Upload</h2>
+    {{>dropzone url="/upload" id="template-helper"}}
+  </section>
+
+  <section id="results">
+    <h2>Results</h2>
+    <p>After uploading a file, you should now see it inside of the the
+    public/uploads/ directory.</p>
+  </section>
+
+</body>
