@@ -46,6 +46,9 @@ A full list of options can be found in the Dropzone [documentation](http://www.d
 ## Example for upload on server.
 Iron router is quite tricky for handling post data. Flow router is mostly for clietn side. Either you implement your own handler on a specific route or simply use: [metor-upload-server](https://github.com/tomitrescak/meteor-tomi-upload-server)
 
+You can see an example-app using this method inside of the
+[example-app](example-app) directory.
+
 First add the server to your packages.
 ```
 meteor add tomi:upload-server
