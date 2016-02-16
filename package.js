@@ -1,7 +1,7 @@
 Package.describe( {
   name: 'dbarrett:dropzonejs',
   summary: 'Dropzone.js - an open source library that provides drag\'n\'drop file uploads with image previews',
-  version: '4.2.0',
+  version: '4.2.1',
   git: 'https://github.com/devonbarrett/meteor-dropzone.git'
 } );
 
