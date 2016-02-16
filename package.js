@@ -26,8 +26,8 @@ Package.onUse( function ( api ) {
 
   //add dropzone template
   api.addFiles( [
-    'lib/dbarrett:dropzonejs.html',
-    'lib/dbarrett:dropzonejs.js'
+    'lib/dropzonejs.html',
+    'lib/dropzonejs.js'
   ], 'client' );
 } );
 
