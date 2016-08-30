@@ -54,7 +54,7 @@ Thanks to [tomi](https://github.com/tomitrescak) for his wonderful package.
 
 Then use the following simple code in one of your server files:
 
-```
+```javascript
 UploadServer.init({
   tmpDir: '/tmp/',
   uploadDir: '/var/www/upload/',
@@ -69,7 +69,7 @@ UploadServer.init({
 ```
 
 Files can be renamed on the server as mentioned above. They can be used in the client as follows:
-```
+```javascript
 Template.tDropzone.onRendered(function () {
   var options = _.extend( {}, Meteor.Dropzone.options, this.data );
   
