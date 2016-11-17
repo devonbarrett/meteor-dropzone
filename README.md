@@ -1,5 +1,10 @@
 # Meteor-Dropzone [![Build Status](https://travis-ci.org/devonbarrett/meteor-dropzone.png?branch=master)](https://travis-ci.org/devonbarrett/meteor-dropzone)
 
+## DEPRECATED
+
+As of Meteor 1.3, this package is no longer maintained, in favour of using Dropzone from NPM. 
+https://guide.meteor.com/using-npm-packages.html#client-npm
+
 ## Dropzone.js
 [DropzoneJS](http://www.dropzonejs.com/) is an open source library that provides drag'n'drop file uploads with image previews.
 
